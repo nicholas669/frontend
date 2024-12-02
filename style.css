@@ -84,6 +84,7 @@ body{
     font-style: normal;
     color: white;
     margin-left: 20%;
+    border: 0px;
 }
 .gambar button:hover{
     background-color: rgb(20, 200, 240);
@@ -205,4 +206,7 @@ body{
     border: 0px;
 
 
+}
+.second_half button:hover{
+    background-color: rgb(20, 200, 240);
 }
