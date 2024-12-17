@@ -1,0 +1,31 @@
+.box{
+    width: 200px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.light{
+    margin-bottom: 20px;
+}
+#red{
+    width: 100px;
+    height: 100px;
+    border-radius: 100000px;
+    /* background-color: red; */
+
+}
+#yellow{
+    width: 100px;
+    /* background-color: yellow; */
+    height: 100px;
+    border-radius: 1000000px;
+}
+#green{
+    width: 100px;
+    /* background-color: rgb(0, 255, 64); */
+    height: 100px;
+    border-radius: 1000000px;
+}

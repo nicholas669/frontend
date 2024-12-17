@@ -16,6 +16,7 @@ body{
     position: sticky;
     height: 8%;
     top: 1px;
+    z-index: 2;
 }
 .navbar a{
     display: inline;
@@ -33,14 +34,77 @@ body{
 }
 .navbar .sec2{
     /* margin-left: 40px; */
-    margin-right: 40px;
     align-items: center;
-    margin-right: 70px;
-    margin-right: 450px;
+    margin-left: 180px;
+
 }
 .navbar .sec1{
     width: 10%;
 }
+
+.mode{
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.light, .dark{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.dark{
+    transition: color 1s;
+    align-self: center;
+    height: 100%;
+}
+.dark button{
+    border: 0px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: color 1s;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+.dark button:hover{
+    color: white;
+    background-color: black;
+}
+.light button{
+    border: 0px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: color 1s;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+.snow button{
+    border: 0px;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: color 1s;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+.snw{
+    position: fixed;
+    width: 0%;
+    height: 0%;
+    z-index: 1;
+}
+
 @media screen and (max-width:900px){
     .navbar{
         height: 60px;
@@ -52,11 +116,12 @@ body{
     width: 100%;
     height: 700px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 1000px;
+    z-index: 0;
 }
 .one .first_half{
-    width: 65%;
+    width: 100%;
     background-color: rgb(46, 171, 171);
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +143,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 20px;
 }
 .one h2{
     font-family: "Poppins", sans-serif;
@@ -93,7 +158,7 @@ body{
     height: 100%;
 }
 
-.second_half h1{
+/* .second_half h1{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -124,14 +189,14 @@ form{
     font-style: normal;
     width: 70%;
     /* margin: 20px; */
-}
-label {
+/* } */
+/* label {
     /* display: block; */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px;
     font-weight: bold;
     color: #555;
-}
-input {
+} */
+/* input {
     display: flex;
     width: 100%;
     padding: 10px;
@@ -142,8 +207,8 @@ input {
     color: #333;
     margin-bottom: 60px;
     margin-top: 20px;
-}
-button {
+} */
+/* button {
     width: 100%;
     padding: 12px;
     background-color: #10cab8;
@@ -153,4 +218,41 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+} */
+/* .second h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.second p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}  */
+.first_half button{
+    display: inline-flex;
+    width: 50%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.redeem h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.redeem{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

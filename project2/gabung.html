@@ -13,21 +13,38 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <div class="navbar">
+<body id="body" onload="move()">
+    <img src="" alt="" class="snw">
+    <div class="navbar" id="nav">
         <div class="sec1">
             <a href="index.html"><img src="fithub.svg" alt=""></a>
         </div>
         <div class="sec2">
-            <a href="">Membership</a>
-            <a href="">Personal Trainer</a>
-            <a href="">Lokasi</a>
-            <a href="">Kelas</a>
-            <a href="">Tentang Kami</a>
+            <a href="" class="a">Membership</a>
+            <a href="" class="a">Personal Trainer</a>
+            <a href="" class="a">Lokasi</a>
+            <a href="" class="a">Kelas</a>
+            <a href="" class="a">Tentang Kami</a>
+        </div>
+        <div class="mode">
+            <div class="snow">
+                <button onclick="snow()">Snow Theme</button>
+            </div>
+            <div class="light">
+                <button onclick="lightmode()">Light Mode</button>
+            </div>
+            <div class="dark">
+                <button onclick="darkmode()">Dark Mode</button>
+            </div>
         </div>
     </div>
     <div class="one">
         <div class="first_half">
+            <div class="redeem">
+                <h1>Redeem Free Trial Sekarang</h1>
+                <button onclick="popup()">Fill in the form</button>
+                <h1 id="false"></h1>
+            </div>
             <div class="text">
                 <h2>Coba gratis dan dapatkan penawaran menarik⚡️</h2>
             </div>
@@ -35,7 +52,7 @@
                 <img src="pic5.png" alt="">
             </div>
         </div>
-        <div class="second_half">
+        <!-- <div class="second_half">
             <div class="text">
                 <h1>Redeem Free Trial Sekarang</h1>
             </div>
@@ -48,7 +65,7 @@
                     <input type="text" id="city" name="city" placeholder="Enter your city" required>
 
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}"
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
                         required>
 
                     <label for="email">Email:</label>
@@ -57,12 +74,18 @@
                     <label for="referral">Referral Code:</label>
                     <input type="text" id="referral" name="referral" placeholder="Enter referral code (optional)">
 
-                    <button type="submit">Submit</button>
+                    <button type="button" onclick="collect()">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-
+     -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="script.js"></script>
+<div class="second">
+    <h1 id="info"></h1>
+    <p id="details"></p>
+</div>
 </body>
 
 </html>
