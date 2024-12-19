@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="train">
+        <img src="train.png" alt="">
+    </div>
+    <div class="portal">
+        <div class="light">
+            <div class="lights">
+                <div class="red" id="light1"></div>
+                <div class="red" id="light2"></div>
+            </div>
+            <div class="stand">
+
+            </div>
+        </div>
+        <audio src="audio_train.mp3" id="audio"></audio>
+        <div class="gate" id="gate">
+            <img src="gate.png" alt="">
+        </div>
+    </div>
+    <button onclick="start_train()"> START</button>
+    <img src="car_cart.webp" alt="" class="car" id="car">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
